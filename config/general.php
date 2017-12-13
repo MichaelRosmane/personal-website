@@ -13,24 +13,23 @@ return [
         'enableCsrfProtection' => true,
         'cpTrigger' => 'manage-content',
         'securityKey' => getenv('SECURITY_KEY'),
+        'omitScriptNameInUrls' => getenv('OMIT_SCRIPT_IN_URL'),
     ],
 
     // --------------------------------------------------------------------------------------- Dev environment settings
     'dev' => [
         'siteUrl' => 'http://personal-website.local',
         'devMode' => true,
-        'omitScriptNameInUrls' => false,
     ],
 
     // ----------------------------------------------------------------------------------- Staging environment settings
     'staging' => [
         'siteUrl' => null,
-        'omitScriptNameInUrls' => true,
     ],
 
     // -------------------------------------------------------------------------------- Production environment settings
     'production' => [
         'siteUrl' => 'http://michaelrosmane.be',
-        'omitScriptNameInUrls' => true,
+
     ],
 ];
