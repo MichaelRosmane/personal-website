@@ -1,0 +1,26 @@
+{% extends '_layout.html' %}
+
+{% block content %}
+
+  <h1>Blogposts</h1>
+
+    {% paginate craft.entries.section('blog').limit(10) as pageInfo, blogs %}
+
+    {% if pageInfo.total %}
+
+        {% for entry in blogs %}
+          <article>
+            <h3>{{ entry.title }}</h3>
+          </article>
+        {% endfor %}
+
+        {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+        {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+
+    {% else %}
+
+      <p>Ow you've caught me at a bad time, seems there's no blog posts yet to be found. Check back soon!</p>
+
+    {% endif %}
+
+{% endblock %}

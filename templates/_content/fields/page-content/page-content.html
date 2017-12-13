@@ -1,0 +1,7 @@
+{% for block in entry.pageContent %}
+
+    {% if block.type == 'textBlock' %}
+        {{ block.textContent }}
+    {% endif %}
+
+{% endfor %}

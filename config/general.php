@@ -16,7 +16,7 @@ return [
         'enableCsrfProtection' => true,
 
         // Whether "index.php" should be visible in URLs
-        'omitScriptNameInUrls' => true,
+        'omitScriptNameInUrls' => false,
 
         // Control Panel trigger word
         'cpTrigger' => 'admin',

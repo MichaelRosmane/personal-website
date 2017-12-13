@@ -1,0 +1,7 @@
+h1 {
+  font-size: 30px; }
+
+.container {
+  min-height: 100vh; }
+  .container .content {
+    flex: 1; }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Michaël Rosmane | Personal site</title>
+
+    {# CSS #}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/assets/css/styling.css"/>
+
+</head>
+<body class="fl w-100 avenir f5 bg-near-white mid-gray">
+
+<div class="container flex flex-column justify-center">
+
+    {% include '_content/header.html' %}
+
+    <div class="w-100 ph3-m ph5-l  content bg-white ">
+        {% block content %}
+
+            <h1>TEST</h1>
+
+        {% endblock %}
+    </div>
+
+    {% include '_content/footer.html' %}
+</div>
+
+</body>
+</html>
